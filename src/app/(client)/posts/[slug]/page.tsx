@@ -9,7 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
 interface Params {
@@ -96,6 +95,7 @@ const myPortableTextComponents = {
 
 const richTextStyles = `
 mt-14
+py-9
 text-justify
 max-w-2xl
 m-auto
