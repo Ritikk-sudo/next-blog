@@ -8,6 +8,6 @@ const config: Config = {
   ],
   darkMode: "class", // or 'media' or 'class
   theme: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography"),],
 };
 export default config;
