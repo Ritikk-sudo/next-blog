@@ -95,9 +95,14 @@ const myPortableTextComponents = {
 
 const richTextStyles = `
 mt-14
-text-justify
+md:text-justify
+text-left
 max-w-2xl
+text-sm
+md:text-lg
 m-auto
+mr-9
+md:mx-auto
 prose-headings:my-5
 prose-heading:text-2xl
 prose-p:mb-11
