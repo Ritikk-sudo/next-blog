@@ -15,8 +15,8 @@ const Navbar = () => {
             href="/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <div className="self-center w-[50%] h-[50%] font-bold whitespace-nowrap text-[#ce9251] dark:text-white dark:hover:text-[#ce9251]">
-              <Image src="/logo.png" width={500} height={500} alt="logo" />
+            <div className="self-center mt-8 w-[50%] h-[50%] font-bold whitespace-nowrap text-[#ce9251] dark:text-white dark:hover:text-[#ce9251]">
+              <Image src="/logo.png" width={200} height={200} alt="logo" />
             </div>
           </Link>
         <ThemeSwitch />

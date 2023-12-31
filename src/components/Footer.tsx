@@ -11,12 +11,12 @@ function Footer() {
             href="/"
             className="flex p-0 items-center sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <div className="self-center m-auto w-[50%] h-[50%] font-bold whitespace-nowrap text-[#ce9251] dark:text-white dark:hover:text-[#ce9251]">
+            <div className="self-center m-auto  md:w-[50%] md:h-[50%] w-[30%] h-[30%] font-bold whitespace-nowrap text-[#ce9251] dark:text-white dark:hover:text-[#ce9251]">
               <Image
-                className=""
+                className="my-8"
                 src="/logo.png"
-                width={500}
-                height={500}
+                width={200}
+                height={200}
                 alt="logo"
               />
             </div>
