@@ -30,7 +30,12 @@ async function getPost(slug: string) {
       _id,
       slug,
       name
-    }
+    },
+    authors[]-> {
+      _id,
+      slug,
+      name,
+    },
   }
   `;
 
@@ -41,7 +46,7 @@ async function getPost(slug: string) {
 export const revalidate = 60;
 
 const page = async ({ params }: Params) => {
-  console.log(params, "parmas");
+  // console.log(params, "parmas");
   const post: Post = await getPost(params?.slug);
   console.log(post, "post");
 
@@ -64,6 +69,15 @@ const page = async ({ params }: Params) => {
               </span>
             </Link>
           ))}
+          <div className="my-5">
+            {post?.authors?.map((author) => (
+              <Link key={author?._id} href={`/author/${author.slug.current}`}>
+                <span className="mr-2 p-1 rounded-sm text-sm dark:bg-gray-950 border dark:border-gray-900">
+                  <b>Author: </b>{author.name}
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className={richTextStyles}>

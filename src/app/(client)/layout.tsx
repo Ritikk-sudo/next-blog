@@ -8,13 +8,13 @@ import Footer from "../../components/Footer";
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dev Techsposure",
-  description: "A blogging website by Ritik",
-  icons:{
-    icon:['/favicon.ico?v=4'],
-    apple:['/apple-touch-icon.png?v=4'],
-    shortcut:['/favicon.ico?v=4']
-  }
+  title: "Giri Dev",
+  description: "A blogging website by Ritik, Giri Dev",
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/favicon.ico?v=4"],
+  },
 };
 
 export default function RootLayout({

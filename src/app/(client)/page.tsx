@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { client } from "../../../sanity/lib/client";
-import { Post } from '../../utils/interface';
+import { Post } from "../../utils/interface";
 import PostComponent from "../../components/PostComponent";
 import Header from "../../components/Header";
 
@@ -25,15 +25,15 @@ async function getPosts() {
 export const revalidate = 60;
 
 export default async function Home() {
-  const posts: Post[] = await getPosts()
+  const posts: Post[] = await getPosts();
   // console.log(post);
   return (
     <div>
-    <Header title="Articles" tags />
-    <div>
-      {posts?.length > 0 &&
-        posts?.map((post) => <PostComponent key={post?._id} post={post} />)}
+      <Header title="Articles" tags />
+      <div>
+        {posts?.length > 0 &&
+          posts?.map((post) => <PostComponent key={post?._id} post={post} />)}
+      </div>
     </div>
-  </div>
-  )
+  );
 }

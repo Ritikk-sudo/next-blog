@@ -49,5 +49,11 @@ export const post = {
       type: "array",
       of: [{ type: "reference", to: [{ type: "tag" }] }],
     },
+    {
+      name: "authors",
+      title: "Authors",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "author" }] }],
+    },
   ],
 };
