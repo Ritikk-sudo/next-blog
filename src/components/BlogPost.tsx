@@ -8,7 +8,7 @@ import { urlForImage } from "../../sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import { VT323 } from "next/font/google";
 import Image from "next/image";
-import { FidgetSpinner } from "react-loader-spinner";
+import { BallTriangle } from "react-loader-spinner";
 
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
@@ -24,13 +24,15 @@ function BlogPost({ post }: any) {
     <div>
       {loading ? (
         <div className="flex mt-32 justify-center items-center">
-          <FidgetSpinner
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="fidget-spinner-loading"
+          <BallTriangle
+            height={100}
+            width={100}
+            radius={5}
+            color="#4fa94d"
+            ariaLabel="ball-triangle-loading"
             wrapperStyle={{}}
-            wrapperClass="fidget-spinner-wrapper"
+            wrapperClass=""
+            visible={true}
           />
         </div>
       ) : (
