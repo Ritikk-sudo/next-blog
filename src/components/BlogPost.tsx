@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import { urlForImage } from "../../sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import { VT323 } from "next/font/google";
 import Image from "next/image";
-import { BallTriangle } from "react-loader-spinner";
+import { FidgetSpinner } from "react-loader-spinner";
 
 const dateFont = VT323({ weight: "400", subsets: ["latin"] });
 
@@ -23,17 +23,15 @@ function BlogPost({ post }: any) {
   return (
     <div>
       {loading ? (
-        <div className="flex justify-center items-center">
-            <BallTriangle
-          height={100}
-          width={100}
-          radius={5}
-          color="#4fa94d"
-          ariaLabel="ball-triangle-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-        />
+        <div className="flex mt-32 justify-center items-center">
+          <FidgetSpinner
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="fidget-spinner-loading"
+            wrapperStyle={{}}
+            wrapperClass="fidget-spinner-wrapper"
+          />
         </div>
       ) : (
         <div>

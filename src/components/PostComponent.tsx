@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { BallTriangle } from "react-loader-spinner";
+import { FidgetSpinner } from "react-loader-spinner";
 
 import { Lilita_One, VT323 } from "next/font/google";
 import { Post } from "../utils/interface";
@@ -27,15 +27,13 @@ const PostComponent = ({ post }: Props) => {
     <div>
       {loading ? (
         <div className="flex justify-center my-11 items-center">
-          <BallTriangle
-            height={100}
-            width={100}
-            radius={5}
-            color="#4fa94d"
-            ariaLabel="ball-triangle-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
+          <FidgetSpinner
             visible={true}
+            height="80"
+            width="80"
+            ariaLabel="fidget-spinner-loading"
+            wrapperStyle={{}}
+            wrapperClass="fidget-spinner-wrapper"
           />
         </div>
       ) : (
