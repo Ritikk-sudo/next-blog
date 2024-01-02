@@ -60,7 +60,7 @@ function Footer() {
         <span className="block justify-center text-sm text-gray-500 text-center dark:text-gray-400">
           © 2023{" "}
           <Link href="/" className="hover:underline hover:text-[#ce9251]">
-            DevTechsposure™
+            GiriDev™
           </Link>
           . All Rights Reserved.
         </span>
